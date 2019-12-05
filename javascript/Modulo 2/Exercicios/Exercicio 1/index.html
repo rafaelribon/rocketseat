@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="UT-8">
+    <title> Curso Java Script</title>
+</head>
+    <body>
+            <button id="new">Novo quadrado</button>
+            <div id='squares'></div>
+
+        </div>
+   
+    <script>
+        var btnElement = document.querySelector('#new');
+        var squareElement = document.querySelector('#squares');
+
+
+        btnElement.onclick = function() {
+            var square = document.createElement('div');
+            square.style.width = 100;
+            square.style.height = 100;
+            square.style.backgroundColor = '#f00';
+            
+            squareElement.appendChild(square);
+
+
+        };
+
+      
+    
+    </script>
+     </body>
+
+</html>
